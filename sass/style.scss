@@ -1,0 +1,63 @@
+@import 'base/var';
+@import 'base/mixin';
+
+* {
+    font-family: 'Museo Sans Curl', sans-serif;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/advantages';
+@import 'blocks/consult';
+@import 'blocks/form';
+
+.slider {
+    min-height: 700px;
+    padding-top: 150px;
+
+    &__img {
+        min-width: 900px;
+        min-height: 500px;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        width: 750px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            background: url('../icons/left.png') center center / cover no-repeat;
+            z-index: 1;
+            left: -50px;
+            top: 45%;
+            cursor: pointer;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            background: url('../icons/rigth.png') center center / cover no-repeat;
+            z-index: 1;
+            right: -50px;
+            top: 45%;
+            cursor: pointer;
+        }
+
+
+    }
+
+}
