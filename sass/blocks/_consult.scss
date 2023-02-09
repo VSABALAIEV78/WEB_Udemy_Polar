@@ -2,16 +2,21 @@
     min-height: 680px;
     padding: 100px 0 90px 0;
     background: url('../../img/bg2.jpg') center center / cover no-repeat;
-    color: #fff;
 
-    &__title {
+    .title {
         font-size: 36px;
         font-weight: 400;
-        text-align: left;
         text-transform: uppercase;
+        text-align: center;
+
+        &_consult {
+            text-align: left;
+            color: #fff;
+        }
     }
 
     &__text {
+        color: #fff;
         padding-top: 80px;
         font-size: 20px;
         font-weight: 400;
@@ -19,10 +24,6 @@
         letter-spacing: normal;
         line-height: normal;
         text-align: left;
-    }
-
-    &__form {
-        margin-top: 36px;
     }
 
 }
