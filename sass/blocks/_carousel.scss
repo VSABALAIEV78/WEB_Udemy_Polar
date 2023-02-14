@@ -37,13 +37,27 @@
             font-size: 0;
             line-height: 0;
             display: block;
-            width: 20px;
+            width: 30px;
             height: 20px;
             padding: 5px;
             color: transparent;
             border: 0;
             outline: none;
             background: transparent;
+            color: grey;
         }
+
+        li {
+            color: rgb(165, 165, 165);
+        }
+
+        li.slick-active {
+            color: $main-color;
+        }
+
+        li::marker {
+            font-size: 2em;
+        }
+
     }
 }
