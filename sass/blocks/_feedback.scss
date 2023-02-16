@@ -1,0 +1,51 @@
+.feedback {
+    min-height: 700px;
+    margin: 70px auto;
+
+    &__record {
+        margin-top: 50px;
+        display: flex;
+        width: 885px;
+        min-height: 250px;
+        border-bottom: 2px solid #f6f6f6;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 169px;
+        max-height: 169px;
+        margin-right: 60px;
+    }
+
+    &__descr {
+        width: 650px;
+        min-height: 195px;
+    }
+
+    &__name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    &__event {
+        margin-top: 14px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    &__text {
+        margin-top: 19px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+    }
+}
