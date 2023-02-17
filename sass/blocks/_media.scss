@@ -357,6 +357,22 @@
             font-size: 14px;
         }
     }
+
+    .map {
+        height: 450px;
+
+        iframe {
+            height: 450px
+        }
+
+        &__info {
+            width: 350px;
+            height: 180px;
+            padding: 20px 20px;
+            font-size: 17px;
+
+        }
+    }
 }
 
 @media (max-width: 559px) {
@@ -551,6 +567,35 @@
 
         &__text {
             padding-bottom: 10px;
+        }
+    }
+
+    .map {
+        height: 450px;
+
+        iframe {
+            height: 450px
+        }
+
+
+        &__info {
+            width: 300px;
+            height: 180px;
+            padding: 20px 20px;
+            font-size: 17px;
+        }
+
+        &__social {
+
+            &_icon {
+                width: 40px;
+                height: 40px;
+
+                img {
+                    height: 20px;
+
+                }
+            }
         }
     }
 }
