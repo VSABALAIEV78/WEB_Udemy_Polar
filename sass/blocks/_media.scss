@@ -479,15 +479,6 @@
 
     }
 
-    .form {
-        align-items: center;
-
-        &__item {
-            width: 270px;
-
-        }
-    }
-
     .button {
         &_form {
             width: 270px;
@@ -598,4 +589,50 @@
             }
         }
     }
+
+    .form {
+        align-items: center;
+
+        &__item {
+            width: 270px;
+
+        }
+    }
+
+    .modal {
+        width: 80%;
+        max-width: 350px;
+        padding: 10px 5px;
+        min-height: 400;
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__text {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+
+        &__close {
+            right: -25px;
+            font-size: 30px;
+        }
+
+        .form {
+
+            width: 95%;
+
+            &__item {
+                width: 95%;
+            }
+
+            .button_form {
+                width: 95%;
+
+            }
+        }
+
+    }
+
 }

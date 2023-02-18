@@ -36,6 +36,24 @@ $(document).ready(function () {
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
+    // .modal consultation
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn();
+    });
 
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #order, #thanks').fadeOut();
+    });
 
+    // .modal .button_mini
+    $('.button_mini').on('click', function () {
+        $('.overlay, #order').fadeIn();
+    });
+
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__text').text($('.catalog-item__subheader').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+    });
 });
